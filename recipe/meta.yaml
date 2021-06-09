@@ -23,13 +23,14 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-matrix
     - r-ggplot2
     - r-lme4
+    - r-lmeinfo
     - r-nlme
-    - r-numderiv
     - r-pbkrtest
     - r-plyr
   run:
@@ -37,8 +38,8 @@ requirements:
     - r-matrix
     - r-ggplot2
     - r-lme4
+    - r-lmeinfo
     - r-nlme
-    - r-numderiv
     - r-pbkrtest
     - r-plyr
 
