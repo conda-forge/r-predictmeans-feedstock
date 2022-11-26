@@ -26,22 +26,38 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-hrw
+    - r-mass
     - r-matrix
+    - r-car
     - r-ggplot2
     - r-lme4
     - r-lmeinfo
+    - r-lmesplines
+    - r-lmertest
     - r-nlme
+    - r-numderiv
     - r-pbkrtest
+    - r-plotly
     - r-plyr
+    - r-splines2
   run:
     - r-base
+    - r-hrw
+    - r-mass
     - r-matrix
+    - r-car
     - r-ggplot2
     - r-lme4
     - r-lmeinfo
+    - r-lmesplines
+    - r-lmertest
     - r-nlme
+    - r-numderiv
     - r-pbkrtest
+    - r-plotly
     - r-plyr
+    - r-splines2
 
 test:
   commands:
