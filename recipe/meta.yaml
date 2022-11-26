@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "1.0.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predictmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predictmeans/predictmeans_{{ version }}.tar.gz
-  sha256: b131a637dd5a6972e109011c193c4f752b0564af2d43d3ebd8db515bda3ee3d5
+  sha256: 69dbf2a3df4c5fdc83c02d2c8d633e462900d6488a78837fe89d3c8cf1d7b3f0
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,22 +26,38 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-hrw
+    - r-mass
     - r-matrix
+    - r-car
     - r-ggplot2
     - r-lme4
     - r-lmeinfo
+    - r-lmesplines
+    - r-lmertest
     - r-nlme
+    - r-numderiv
     - r-pbkrtest
+    - r-plotly
     - r-plyr
+    - r-splines2
   run:
     - r-base
+    - r-hrw
+    - r-mass
     - r-matrix
+    - r-car
     - r-ggplot2
     - r-lme4
     - r-lmeinfo
+    - r-lmesplines
+    - r-lmertest
     - r-nlme
+    - r-numderiv
     - r-pbkrtest
+    - r-plotly
     - r-plyr
+    - r-splines2
 
 test:
   commands:
