@@ -1,11 +1,11 @@
-About r-predictmeans
-====================
+About r-predictmeans-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-predictmeans-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=predictmeans
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-predictmeans-feedstock/blob/main/LICENSE.txt)
 
 Summary: Providing functions to diagnose and make inferences from various linear models, such as those obtained from 'aov', 'lm', 'glm', 'gls', 'lme', and 'lmer'. Inferences include predicted means and standard errors, contrasts, multiple comparisons, permutation tests and graphs.
 
