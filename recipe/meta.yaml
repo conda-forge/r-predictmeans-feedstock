@@ -31,6 +31,7 @@ requirements:
     - r-matrix
     - r-car
     - r-ggplot2
+    - r-glmmtmb
     - r-lme4
     - r-lmeinfo
     - r-lmesplines
@@ -48,6 +49,7 @@ requirements:
     - r-matrix
     - r-car
     - r-ggplot2
+    - r-glmmtmb
     - r-lme4
     - r-lmeinfo
     - r-lmesplines
