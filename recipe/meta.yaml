@@ -1,4 +1,4 @@
-{% set version = "1.0.9" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predictmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predictmeans/predictmeans_{{ version }}.tar.gz
-  sha256: 9da1f4d650a6eb6892b073ac021ddb5ca688d0c31470eb5bd453ff4e316fd535
+  sha256: 381d11fafb7de4ddad0ad2900bf7f1f7edde6aeec057b2c76e7697c2d2d12080
 
 build:
   merge_build_host: true  # [win]
