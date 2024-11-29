@@ -39,6 +39,7 @@ requirements:
     - r-pbkrtest
     - r-plotly
     - r-plyr
+    - r-reformulas
     - r-splines2
   run:
     - r-base
@@ -57,6 +58,7 @@ requirements:
     - r-pbkrtest
     - r-plotly
     - r-plyr
+    - r-reformulas
     - r-splines2
 
 test:
