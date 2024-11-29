@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predictmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predictmeans/predictmeans_{{ version }}.tar.gz
-  sha256: 381d11fafb7de4ddad0ad2900bf7f1f7edde6aeec057b2c76e7697c2d2d12080
+  sha256: 3d7e3bc839405be2a61767c7d728ca0fba6edd93a88f7ad232a7e04edab83f4e
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,6 +39,7 @@ requirements:
     - r-pbkrtest
     - r-plotly
     - r-plyr
+    - r-reformulas
     - r-splines2
   run:
     - r-base
@@ -57,6 +58,7 @@ requirements:
     - r-pbkrtest
     - r-plotly
     - r-plyr
+    - r-reformulas
     - r-splines2
 
 test:
