@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predictmeans_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predictmeans/predictmeans_{{ version }}.tar.gz
-  sha256: 3d7e3bc839405be2a61767c7d728ca0fba6edd93a88f7ad232a7e04edab83f4e
+  sha256: 20480c5ce863e4ccd181c787f829cf8f893bae751fdc2893e5a1fd2628d7389e
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
